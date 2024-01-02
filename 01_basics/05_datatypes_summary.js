@@ -18,18 +18,35 @@ console.log(id === anotherId);
 // ******************************************************************************************************
 
 // Non primitive (Call by reference - i.e. actualy value is passed and any changed made, is made to the original value)
-// Array, Objects, Functions
+// Array, Objects, Functions (the type of all the non-primitive data types are broadly called as object)
 
-const heros = ["shaktiman", "naagraj", "doga"];
+const heros = ["shaktiman", "naagraj", "doga"]; // object
 let myObj = {
     name: "pawan",
     age: 22,
-}
+} // object
 
 const myFunction = function(){
     console.log("Hello world");
-}
+} // type of - function object or just function or just object, we can call it anything
 
 console.log(typeof anotherId);
 
-// https://262.ecma-international.org/5.1/#sec-11.4.3
+/**
+ * https://262.ecma-international.org/5.1/#sec-11.4.3
+ * 
+ * Return type of variables in JavaScript
+ * 1) Primitive Datatypes
+       Number => number
+       String  => string
+       Boolean  => boolean
+       null  => object
+       undefined  =>  undefined
+       Symbol  =>  symbol
+       BigInt  =>  bigint
+       
+    2) Non-primitive Datatypes
+       Arrays  =>  object
+       Function  =>  function
+       Object  =>  object
+ */
