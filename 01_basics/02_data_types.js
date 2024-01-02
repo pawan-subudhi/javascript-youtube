@@ -33,5 +33,6 @@ let state = null
  *  object
  */
 
+console.log(typeof(name))
 console.log(typeof null) // null is an object
 console.log(typeof undefined)
